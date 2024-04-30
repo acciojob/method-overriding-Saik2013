@@ -1,13 +1,5 @@
 package com.driver;
 
-public class Main {
-    public static void main(String[]args){
-        A obj = new A();
-        System.out.println(obj.meth());
-        A obj1 = new B();
-        System.out.println(obj1.meth());
-    }
-}
 class A{
     public String meth(){
         return "Invoking method from class A";
@@ -18,3 +10,17 @@ class B extends A{
         return "Method is overridden in Extendend class B";
     }
 }
+public class Main {
+    public static void main(String[]args){
+        A obj = new A();
+        //calling a method
+        String resTask3 = obj.meth();
+        System.out.println("task 3 result: "+ resTask3);
+        //polymorphism
+        A obj1 = new B();
+        //callin a method in B class
+        String resTask5 = obj1.meth();
+        System.out.println("task 5 result: "+ resTask5);
+    }
+}
+
