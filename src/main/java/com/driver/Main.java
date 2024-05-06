@@ -20,8 +20,10 @@ public class Main {
         // Task 3
         B objB = new B();
         B obj1 = new B();
-        System.out.println(objB.meth());
-        System.out.println(obj1.meth());
+        objB.meth();
+        obj1.meth();
+//        System.out.println(objB.meth());
+//        System.out.println(obj1.meth());
     }
 }
 
